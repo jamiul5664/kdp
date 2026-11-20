@@ -1,0 +1,6 @@
+{
+  "name": "KDP Studio AI",
+  "description": "AI-powered Amazon KDP publishing studio for market niche research, conversational publishing workflows, manuscript book editing, cover design, and listing optimization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

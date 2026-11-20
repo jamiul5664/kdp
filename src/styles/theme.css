@@ -1,0 +1,91 @@
+/* KDP Studio AI Design System Tokens
+ * Dark Mode Default:
+ *   Canvas: #0B0D12
+ *   Sidebar: #11141C
+ *   Card Surface: #171B25
+ *   Primary Accent: #8B7CFF
+ *   Secondary Accent: #36CFC9
+ */
+
+:root {
+  --bg-canvas: #f6f7fa;
+  --bg-sidebar: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f3f8;
+  --bg-elevated: #eceff5;
+  --border-subtle: rgba(15, 23, 42, 0.09);
+  --border-strong: rgba(15, 23, 42, 0.16);
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --accent-primary: #6d5ce8;
+  --accent-primary-hover: #5b49dc;
+  --accent-secondary: #0f9f9a;
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-body: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+.dark {
+  --bg-canvas: #0b0d12;
+  --bg-sidebar: #11141c;
+  --bg-card: #171b25;
+  --bg-card-hover: #1e2330;
+  --bg-elevated: #1c212e;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.15);
+  --text-primary: #f1f3f9;
+  --text-secondary: #a1a9bd;
+  --text-muted: #6e778c;
+  --accent-primary: #8b7cff;
+  --accent-primary-hover: #7a69fa;
+  --accent-secondary: #36cfc9;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom sleek scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
